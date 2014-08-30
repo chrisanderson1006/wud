@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="\css\jquery.mobile-1.4.3.css" />
 	<script type="text/javascript" src="\jquery\jquery-2.1.1.js"></script>
 	<script type="text/javascript" src="\jquery\jqueryMobile\jquery.mobile-1.4.3.js"></script>
+	<script type="text/javascript" src="\js\myTest.js"></script>
+	<script type="text/javascript" src="\js\myCall.js"></script>
 </head>
 <body>
 <div data-role="page">
@@ -15,7 +17,20 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<p>Hello world</p>		
+		<p>Hello world</p>
+
+		<textarea id="myBox"></textarea>
+
+		<style type="text/css">
+			#mybox2 {
+				width: 300px;
+				height: 250px;
+				border: 1px solid #999;
+			}
+		</style>
+		<input type="button" value="AJAX Me!" onclick="myCall();"/>
+		<br>
+		<input type="button" value="Javascript me!" onclick="myTest();"/>
 	</div><!-- /content -->
 
 		<ul data-role="listview" data-inset="true" data-filter="true">
